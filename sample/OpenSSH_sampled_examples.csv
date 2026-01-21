@@ -1,0 +1,33 @@
+Content,EventTemplate
+message repeated 5 times: [ Failed password for root from 5.36.59.76 port 42393 ssh2],message repeated {number} times: [ Failed password for {user_name} from {ip} port {number} ssh2]
+error: Received disconnect from 195.154.45.62: 3: com.jcraft.jsch.JSchException: timeout in waiting for rekeying process. [preauth],error: Received disconnect from {ip}: {number}: {error_type}: timeout in waiting for rekeying process. [preauth]
+pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=5.36.59.76.dynamic-dsl-ip.omantel.net.om user=root,pam_unix(sshd:auth): authentication failure; logname={log_name} uid={number} euid={number} tty={tty_name} ruser={ruser} rhost={host_info} user={user_name}
+reverse mapping checking getaddrinfo for ns.marryaldkfaczcz.com [173.234.31.186] failed - POSSIBLE BREAK-IN ATTEMPT!,reverse mapping checking getaddrinfo for {host_info} [{ip}] failed - POSSIBLE BREAK-IN ATTEMPT!
+fatal: Write failed: Connection reset by peer [preauth],fatal: Write failed: Connection reset by peer [preauth]
+PAM service(sshd) ignoring max retries; 6 > 3,PAM service(sshd) ignoring max retries; {number} > {number}
+Invalid user webmaster from 173.234.31.186,Invalid user {user_name} from {ip}
+input_userauth_request: invalid user myapn_cen [preauth],input_userauth_request: invalid user {user_name} [preauth]
+Disconnecting: Too many authentication failures for root [preauth],Disconnecting: Too many authentication failures for {user_name} [preauth]
+pam_unix(sshd:session): session opened for user fztu by (uid=0),pam_unix(sshd:session): session opened for user {user_name} by (uid={number})
+"Address 82.209.247.10 maps to mail.trionis.ru, but this does not map back to the address - POSSIBLE BREAK-IN ATTEMPT!",Address {ip} maps to {host_info} but this does not map back to the address - POSSIBLE BREAK-IN ATTEMPT!
+Invalid user digi-user from 42.159.145.29,Invalid user {user_name} from {ip}
+Invalid user stefan.fuerst from 212.237.47.142,Invalid user {user_name} from {ip}
+Received disconnect from 52.80.34.196: 11: Bye Bye [preauth],Received disconnect from {ip}: {number}: Bye Bye [preauth]
+Received disconnect from 103.207.39.165: 11: Closed due to user request. [preauth],Received disconnect from {ip}: {number}: Closed due to user request. [preauth]
+error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth],error: Received disconnect from {ip}: {number}: No more user authentication methods available. [preauth]
+fatal: no hostkey alg [preauth],fatal: no hostkey alg [preauth]
+Bad protocol version identification 'SSH-2.0_CoreLab-1.0' from 193.201.224.232 port 8864,Bad protocol version identification {protocol} from {ip} port {number}
+pam_unix(sshd:auth): check pass; user unknown,pam_unix(sshd:auth): check pass; user unknown
+Did not receive identification string from 123.235.32.19,Did not receive identification string from {ip}
+reverse mapping checking getaddrinfo for 191-210-223-172.user.vivozap.com.br [191.210.223.172] failed - POSSIBLE BREAK-IN ATTEMPT!,reverse mapping checking getaddrinfo for {host_info} [{ip}] failed - POSSIBLE BREAK-IN ATTEMPT!
+reverse mapping checking getaddrinfo for 195-154-37-122.rev.poneytelecom.eu [195.154.37.122] failed - POSSIBLE BREAK-IN ATTEMPT!,reverse mapping checking getaddrinfo for {host_info} [{ip}] failed - POSSIBLE BREAK-IN ATTEMPT!
+error: Received disconnect from 195.154.37.122: 3: com.jcraft.jsch.JSchException: Auth fail [preauth],error: Received disconnect from {ip}: {number}: {error_type}: Auth fail [preauth]
+reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!,reverse mapping checking getaddrinfo for {host_info} [{ip}] failed - POSSIBLE BREAK-IN ATTEMPT!
+fatal: Read from socket failed: Connection reset by peer [preauth],fatal: Read from socket failed: Connection reset by peer [preauth]
+Failed password for www-data from 183.62.140.253 port 55983 ssh2,Failed password for {user_name} from {ip} port {number} ssh2
+reverse mapping checking getaddrinfo for hn.kd.ny.adsl [219.156.124.234] failed - POSSIBLE BREAK-IN ATTEMPT!,reverse mapping checking getaddrinfo for {host_info} [{ip}] failed - POSSIBLE BREAK-IN ATTEMPT!
+reverse mapping checking getaddrinfo for free-240-3.mediaworksit.net [178.253.240.3] failed - POSSIBLE BREAK-IN ATTEMPT!,reverse mapping checking getaddrinfo for {host_info} [{ip}] failed - POSSIBLE BREAK-IN ATTEMPT!
+reverse mapping checking getaddrinfo for host-41.42.108.121.tedata.net [41.42.108.121] failed - POSSIBLE BREAK-IN ATTEMPT!,reverse mapping checking getaddrinfo for {host_info} [{ip}] failed - POSSIBLE BREAK-IN ATTEMPT!
+Disconnecting: Packet corrupt [preauth],Disconnecting: Packet corrupt [preauth]
+reverse mapping checking getaddrinfo for . [183.192.189.131] failed - POSSIBLE BREAK-IN ATTEMPT!,reverse mapping checking getaddrinfo for {host_info} [{ip}] failed - POSSIBLE BREAK-IN ATTEMPT!
+reverse mapping checking getaddrinfo for 234.241.54.119.adsl-pool.jlccptt.net.cn [119.54.241.234] failed - POSSIBLE BREAK-IN ATTEMPT!,reverse mapping checking getaddrinfo for {host_info} [{ip}] failed - POSSIBLE BREAK-IN ATTEMPT!

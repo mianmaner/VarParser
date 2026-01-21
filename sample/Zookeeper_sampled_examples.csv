@@ -1,0 +1,33 @@
+Content,EventTemplate
+"Notification: 1 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEPoch), LOOKING (my state)","Notification: {number} (n.leader), {hex_code} (n.zxid), {hex_code} (n.round), {status} (n.state), {number} (n.sid), {hex_code} (n.peerEPoch), {status} (my state)"
+Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /var/lib/zookeeper/version-2 snapdir /var/lib/zookeeper/version-2,Created server with tickTime {number} minSessionTimeout {number} maxSessionTimeout {number} datadir {file_path} snapdir {file_path}
+currentEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation,currentEpoch not found! Creating with a reasonable default of {number}. This should only happen when you are upgrading your installation
+"New election. My id = 1, proposed zxid=0x0","New election. My id = {number}, proposed {hex_code}"
+FOLLOWING - LEADER ELECTION TOOK - 46837,FOLLOWING - LEADER ELECTION TOOK - {number}
+TCP NoDelay set to: true,TCP NoDelay set to: {bool}
+"Server environment:zookeeper.version=3.4.5--1, built on 06/10/2013 17:26 GMT","Server environment:zookeeper.version={version}, built on {date_time} GMT"
+Reading configuration from: /etc/zookeeper/conf/zoo.cfg,Reading configuration from: {file_path}
+Defaulting to majority quorums,Defaulting to majority quorums
+Purge task is not scheduled,Purge task is not scheduled
+Server environment:java.vendor=Oracle Corporation,Server environment:java.vendor={vendor}
+Getting a diff from the leader 0x0,Getting a diff from the leader {hex_code}
+Interrupting SendWorker,Interrupting SendWorker
+autopurge.snapRetainCount set to 3,autopurge.snapRetainCount set to {number}
+Starting quorum peer,Starting quorum peer
+minSessionTimeout set to -1,minSessionTimeout set to {number}
+My election bind port: 0.0.0.0/0.0.0.0:3888,My election bind port: {ip}
+Cannot open channel to 2 at election address /10.10.34.12:3888,Cannot open channel to {number} at election address {ip}
+Received connection request /10.10.34.12:47478,Received connection request {ip}
+Server environment:java.class.path=/etc/zookeeper/conf:/usr/share/java/jline.jar:/usr/share/java/log4j-1.2.jar:/usr/share/java/xercesImpl.jar:/usr/share/java/xmlParserAPIs.jar:/usr/share/java/netty.jar:/usr/share/java/slf4j-api.jar:/usr/share/java/slf4j-log4j12.jar:/usr/share/java/zookeeper.jar,Server environment:java.class.path={file_path}
+Server environment:user.home=/var/lib/zookeeper,Server environment:user.home={file_path}
+Snapshotting: 0x0 to /var/lib/zookeeper/version-2/snapshot.0,Snapshotting: {hex_code} to {file_path}
+"Connection broken for id 188978561024, my id = 1, error =","Connection broken for id {number}, my id = {number}, error ={null_info}"
+binding to port 0.0.0.0/0.0.0.0:2181,binding to port {ip}
+LOOKING,LOOKING
+Notification time out: 400,Notification time out: {number}
+Server environment:host.name=node1,Server environment:host.name={node_id}
+Server environment:java.version=1.7.0_79,Server environment:java.version={version}
+Server environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre,Server environment:java.home={file_path}
+Server environment:java.io.tmpdir=/tmp,Server environment:java.io.tmpdir={file_path}
+Server environment:java.compiler=<NA>,Server environment:java.compiler={compiler}
+Server environment:os.version=3.16.0-30-generic,Server environment:os.version={version}

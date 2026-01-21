@@ -1,0 +1,26 @@
+Content,EventTemplate
+"proxy.cse.cuhk.edu.hk:5070 close, 1036 bytes (1.01 KB) sent, 34151 bytes (33.3 KB) received, lifetime <1 sec","{website_url} close, {number} bytes ({memory_size}) sent, {number} bytes ({memory_size}) received, lifetime {life_time}"
+tcpconn4.tencent.com:80 error : Could not connect through proxy proxy.cse.cuhk.edu.hk:5070 - Proxy closed the connection unexpectedly,{website_url} error : Could not connect through proxy {website_url} - Proxy closed the connection unexpectedly
+"ts1.qq.com:8000 close, 85 bytes sent, 45 bytes received, lifetime 00:01","{website_url} close, {number} bytes sent, {number} bytes received, lifetime {life_time}"
+183.62.156.108:22 open through proxy socks.cse.cuhk.edu.hk:1080 SOCKS5,{website_url} open through proxy {website_url} SOCKS5
+proxy.cse.cuhk.edu.hk:5070 open through proxy proxy.cse.cuhk.edu.hk:5070 HTTPS,{website_url} open through proxy {website_url} HTTPS
+"get.sogou.com:80 close, 1007 bytes sent, 336 bytes received, lifetime <1 sec","{website_url} close, {number} bytes sent, {number} bytes received, lifetime {life_time}"
+tcpconn6.tencent.com:443 error : A connection request was canceled before the completion,{website_url} error : A connection request was canceled before the completion
+"long.weixin.qq.com:8080 error : Could not connect through proxy proxy.cse.cuhk.edu.hk:5070 - Proxy server cannot establish a connection with the target, status code 403","{website_url} error : Could not connect through proxy {website_url} - Proxy server cannot establish a connection with the target, status code {number}"
+"qqmail.tencent.com:12000 error : Could not connect through proxy proxy.cse.cuhk.edu.hk:5070 - Proxy server cannot establish a connection with the target, status code 403","{website_url} error : Could not connect through proxy {website_url} - Proxy server cannot establish a connection with the target, status code {number}"
+"proxy.cse.cuhk.edu.hk:5070 close, 0 bytes sent, 0 bytes received, lifetime <1 sec","{website_url} close, {number} bytes sent, {number} bytes received, lifetime {life_time}"
+"proxy.cse.cuhk.edu.hk:5070 close, 1228 bytes (1.19 KB) sent, 0 bytes received, lifetime <1 sec","{website_url} close, {number} bytes ({memory_size}) sent, {number} bytes received, lifetime {life_time}"
+"proxy.cse.cuhk.edu.hk:5070 close, 0 bytes sent, 0 bytes received, lifetime 00:01","{website_url} close, {number} bytes sent, {number} bytes received, lifetime {life_time}"
+"proxy.cse.cuhk.edu.hk:5070 close, 451 bytes sent, 18846 bytes (18.4 KB) received, lifetime <1 sec","{website_url} close, {number} bytes sent, {number} bytes ({memory_size}) received, lifetime {life_time}"
+"proxy.cse.cuhk.edu.hk:5070 close, 420 bytes sent, 1042 bytes (1.01 KB) received, lifetime 00:01","{website_url} close, {number} bytes sent, {number} bytes ({memory_size}) received, lifetime {life_time}"
+"proxy.cse.cuhk.edu.hk:5070 close, 1088 bytes (1.06 KB) sent, 3383 bytes (3.30 KB) received, lifetime 00:01","{website_url} close, {number} bytes ({memory_size}) sent, {number} bytes ({memory_size}) received, lifetime {life_time}"
+"proxy.cse.cuhk.edu.hk:5070 close, 1121 bytes (1.09 KB) sent, 0 bytes received, lifetime 00:01","{website_url} close, {number} bytes ({memory_size}) sent, {number} bytes received, lifetime {life_time}"
+ts1.qq.com:8000 open through proxy proxy.cse.cuhk.edu.hk:5070 HTTPS,{website_url} open through proxy {website_url} HTTPS
+"proxy.cse.cuhk.edu.hk:5070 close, 28144 bytes (27.4 KB) sent, 203559 bytes (198 KB) received, lifetime 01:01:08","{website_url} close, {number} bytes ({memory_size}) sent, {number} bytes ({memory_size}) received, lifetime {life_time}"
+"security.ie.sogou.com:80 close, 735 bytes sent, 184 bytes received, lifetime <1 sec","{website_url} close, {number} bytes sent, {number} bytes received, lifetime {life_time}"
+"proxy.cse.cuhk.edu.hk:5070 close, 529 bytes sent, 43281385 bytes (41.2 MB) received, lifetime 00:42","{website_url} close, {number} bytes sent, {number} bytes ({memory_size}) received, lifetime {life_time}"
+"183.62.156.108:22 close, 89652 bytes (87.5 KB) sent, 599249 bytes (585 KB) received, lifetime 37:51","{website_url} close, {number} bytes ({memory_size}) sent, {number} bytes ({memory_size}) received, lifetime {life_time}"
+"long.weixin.qq.com:80 close, 0 bytes sent, 0 bytes received, lifetime 00:01","{website_url} close, {number} bytes sent, {number} bytes received, lifetime {life_time}"
+"tcpconn2.tencent.com:80 close, 3815 bytes (3.72 KB) sent, 16677 bytes (16.2 KB) received, lifetime 00:03","{website_url} close, {number} bytes ({memory_size}) sent, {number} bytes ({memory_size}) received, lifetime {life_time}"
+"dns.weixin.qq.com:443 close, 357 bytes sent, 3485 bytes (3.40 KB) received, lifetime <1 sec","{website_url} close, {number} bytes sent, {number} bytes ({memory_size}) received, lifetime {life_time}"
+"qqmail.tencent.com:80 close, 336 bytes sent, 2854 bytes (2.78 KB) received, lifetime 00:01","{website_url} close, {number} bytes sent, {number} bytes ({memory_size}) received, lifetime {life_time}"

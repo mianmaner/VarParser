@@ -1,0 +1,33 @@
+Content,EventTemplate
+"insertHiHealthData() size = 4,app = 1,One Data Type = 40002,packageName = com.huawei.health,writeStatType = 0","insertHiHealthData() size = {number},app = {number},One Data Type = {number},packageName = {pakage_name},writeStatType = {number}"
+"startSync hiSyncOption = HiSyncOption{syncAction=2, syncMethod=2, syncScope=0, syncDataType=20000, syncModel=2, pushAction=0},app = 1 who = 1","startSync hiSyncOption = HiSyncOption{syncAction={number}, syncMethod={number}, syncScope={number}, syncDataType={number}, syncModel={number}, pushAction={number}},app = {number} who = {number}"
+getIntercepterDistance from Prefence success and intercepterDistanceStr= 1513941509364##0.0,getIntercepterDistance from Prefence success and intercepterDistanceStr= {number}
+setBasicStandardSteps basicStandardStep=3786 restartSteps=0,setBasicStandardSteps basicStandardStep={number} restartSteps={number}
+"checkCurrentDay a new day comes , reset basicSyncCondition, currentDay is 20171224 oldDay is 20171223","checkCurrentDay a new day comes , reset basicSyncCondition, currentDay is {number} oldDay is {number}"
+"insertHiHealthData() bulkSaveDetailHiHealthData fail errorCode = 4,errorMessage = ERR_DATA_INSERT","insertHiHealthData() bulkSaveDetailHiHealthData fail errorCode = {number},errorMessage = {error_message}"
+"initDataPrivacy the dataPrivacy switch is open, start push health data!","initDataPrivacy the dataPrivacy switch is {status}, start push health data!"
+"getMidWareStepCountService: pkgName = com.huawei.systemserver, service = com.huawei.systemserver.ihealth.connectivity.HwStepCounterService","getMidWareStepCountService: pkgName = {pakage_name}, service = {pakage_name}"
+onReceive action: android.intent.action.SCREEN_ON,onReceive action: {action_name}
+Alarm uploadStaticsToDB totalSteps=7163Calories:153367Floor:240Distance:5112,Alarm uploadStaticsToDB totalSteps={step_info}
+onStartCommand Intent { cmp=com.huawei.health/.manager.DaemonService },onStartCommand Intent { cmp={pakage_name} }
+startStepCounterInter mStandStepCounter = com.huawei.health.b.b.a@c83b4a6,startStepCounterInter mStandStepCounter = {pakage_name}
+checkSportDataNum setp and calories is too less,checkSportDataNum setp and calories is too less
+startListenerChange subscribeList = [1],startListenerChange subscribeList = [{number}]
+checkInsertStatus stepSum or calorieSum is enough,checkInsertStatus stepSum or calorieSum is enough
+"stepSyncOrNot appSynTimes is 0, statsyncTimes is 0","stepSyncOrNot appSynTimes is {number}, statsyncTimes is {number}"
+"checkFirstSyncByType no such data in db ,type is 1 deviceCode is 0","checkFirstSyncByType no such data in db ,type is {number} deviceCode is {number}"
+InsertEvent success begin:25233975 end:25233979,InsertEvent success begin:{number} end:{number}
+"setDeviceShutDownValue shutDownTime=0,isShutDown=false","setDeviceShutDownValue shutDownTime={number},isShutDown={bool}"
+initStepCounter : deviceType 1,initStepCounter : deviceType {number}
+calculateCaloriesWithCache totalCalories=126775,calculateCaloriesWithCache totalCalories={number}
+"getAppContext() isAppValid health or wear, packageName = com.huawei.health","getAppContext() isAppValid health or wear, packageName = {pakage_name}"
+insertHiHealthData() checkAppType 0 appID = 1,insertHiHealthData() checkAppType {number} appID = {number}
+"saveHealthDetailData() deviceID = 2,clientID=1,id=1","saveHealthDetailData() deviceID = {number},clientID={number},id={number}"
+"saveStatData() type =40002,time = 1513958400000,statClient = 2,who is 1","saveStatData() type ={number},time = {number},statClient = {number},who is {number}"
+"saveHealthDetailData() saveOneDetailData fail hiHealthData = 1513958400000,type = 40003","saveHealthDetailData() saveOneDetailData fail hiHealthData = {number},type = {number}"
+"bulkSaveDetailHiHealthData() size = 4,totalTime = 30","bulkSaveDetailHiHealthData() size = {number},totalTime = {number}"
+uploadStaticsToDB() onResult type = 4 obj=true,uploadStaticsToDB() onResult type = {number} obj={bool}
+needAutoSync autoSyncSwitch is open,needAutoSync autoSyncSwitch is {status}
+ifCanSync not! no cloud version,ifCanSync not! no cloud version
+"timeStamp back,extendReportTimeStamp=1514039575000","timeStamp back,extendReportTimeStamp={number}"
+getTodaySportData mStepsRecordManager=com.huawei.health.g.c@8a2a501,getTodaySportData mStepsRecordManager={pakage_name}

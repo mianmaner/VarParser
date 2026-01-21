@@ -1,0 +1,33 @@
+Content,EventTemplate
+"1 ddr errors(s) detected and corrected on rank 0, symbol 0, bit 3","{number} ddr errors(s) detected and corrected on rank {number}, symbol {number} bit {number}"
+3450051 L3 EDRAM error(s) (dcr 0x0157) detected and corrected,{number} L3 {error_type} error(s) (dcr {hex_code}) detected and corrected
+idoproxydb has been started: $Name: DRV142_2005 $ Input parameters: -enableflush -loguserinfo db.properties BlueGene1,idoproxydb has been started: $Name: {name} $ Input parameters: {input_parameters}
+DDR machine check register: 0x00000000 0x00010000,DDR machine check register: {hex_code} {hex_code}
+"Node card VPD check: U01 node in processor card slot J14 do not match. VPD ecid 04DD8074DF2FFFFF020B1A911ECE, found 07521035D02FFFFF10071C0090EC","Node card VPD check: {node_id} node in processor card slot {slot_id} do not match. VPD ecid {vpd_ecid}, found {vpd_ecid}"
+L3 correctable errors exceeds threshold (iar 0xf003da3c lr 0xf003de50),L3 correctable errors exceeds threshold (iar {hex_code} lr {hex_code})
+EndServiceAction is restarting the NodeCards in midplane R33-M1 as part of Service Action 219,EndServiceAction is restarting the NodeCards in midplane {midplane_id} as part of Service Action {number}
+BGLMaster has been started: ./BGLMaster --consoleip 127.0.0.1 --consoleport 32035 --configfile bglmaster.init,BGLMaster has been started: ./BGLMaster --consoleip {ip} --consoleport {number} --configfile {config_file}
+Ido chip status changed: FF:F2:9F:16:E7:14:00:0D:60:E9:18:EB ip=10.1.1.75 v=13 t=4 status=M Fri Jun 17 07:25:00 PDT 2005,Ido chip status changed: {chip_status} ip={ip} v={number} t={number} status={date}
+"ddr: Unable to steer rank=0, symbol=12 - rank is already steering symbol 14. Due to multiple symbols being over the correctable","ddr: Unable to steer rank={number}, symbol={number} - rank is already steering symbol {number}. Due to multiple symbols being over the correctable"
+ciod: pollControlDescriptors: Detected the debugger died,ciod: pollControlDescriptors: Detected the debugger died
+"PrepareForService shutting down NodeCard(mLctn(R33-M1-ND), mCardSernum(203231503833343000000000594c31304b35303034303232), mLp(FF:F2:9F:16:BF:44:00:0D:60:E9:40:BB), mIp(10.3.0.80), mType(4)) as part of Service Action 219","PrepareForService shutting down NodeCard({node_lctn}, {node_sernum}, {node_mlp}, {node_mlp}, {node_type}) as part of Service Action {number}"
+icache prefetch depth 0,icache prefetch depth {number}
+lr:003625f0 cr:20000000 xer:00000002 ctr:0037f084,lr:{number} cr:{number} xer:{number} ctr:{number}
+ciod: cpu 0 at treeaddr 926 sent unrecognized message 0xffffffff,ciod: cpu {number} at treeaddr {number} sent unrecognized message {hex_code}
+disable flagging of DDR UE's as major internal error.0,disable flagging of DDR UE's as major internal error.{number}
+Controlling BG/L rows [ 0 1 2 3 ],Controlling BG/L rows [ {rows} ]
+BglIdoChip table has 2 IDOs with the same IP address (10.0.0.237),BglIdoChip table has {number} IDOs with the same IP address {ip}
+MidplaneSwitchController performing bit sparing on R27-M1-L3-U18-C bit 3,MidplaneSwitchController performing bit sparing on {location} bit {number}
+"CE sym 0, at 0x0b8580c0, mask 0x10","CE sym {number}, at {hex_code}, mask {hex_code}"
+"ddr: excessive soft failures, consider replacing the card","ddr: excessive soft failures, consider replacing the card"
+ciod: LOGIN chdir(/home/bertsch2/src/bgl_hello) failed: Permission denied,ciod: LOGIN chdir({file_path}) failed: Permission denied
+program interrupt: unimplemented operation..0,program interrupt: unimplemented operation..{number}
+SerialNumber(000000000000000000000000fff29f16e842000d60e917bd) IpAddress(10.0.0.237) Status(A),SerialNumber({serial_number}) IpAddress({ip}) Status({status})
+1347195 double-hummer alignment exceptions,{number} double-hummer alignment exceptions
+1 tree receiver 2 in re-synch state event(s) (dcr 0x019a) detected,{number} tree receiver {number} in re-synch state event(s) (dcr {hex_code}) detected
+"problem state (0=sup,1=usr) 1","problem state ({number}=sup,{number}=usr) {number}"
+guaranteed instruction cache block touch.0,guaranteed instruction cache block touch.{number}
+rts panic! - stopping execution,rts panic! - stopping execution
+17 torus receiver x+ input pipe error(s) (dcr 0x02ec) detected and corrected,{number} torus receiver {number} input pipe error(s) (dcr {hex_code}) detected and corrected
+size of scratchpad portion of L3 0 (0M),size of scratchpad portion of L3 {number} ({size})
+regctl scancom interface 0,regctl scancom interface {number}
