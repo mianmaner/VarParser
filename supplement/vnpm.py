@@ -1,10 +1,10 @@
 import sys
 import os
 sys.path.append(os.getcwd())
-from cache import VarCache
-from prompt import llm_querying
-from utils import correct_message, parse_args
-from eval import evaluator
+from repo.VarParser.varparser.cache import VarCache
+from repo.VarParser.varparser.prompt import llm_querying
+from repo.VarParser.varparser.utils import correct_message, parse_args
+from repo.VarParser.varparser.eval import evaluator
 
 from tqdm import tqdm
 import pandas as pd

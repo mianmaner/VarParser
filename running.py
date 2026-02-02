@@ -1,14 +1,14 @@
-from cache import VarCache
-from prompt import llm_querying
-from utils import correct_message, parse_args
-from eval import evaluator
+from varparser.cache import VarCache
+from varparser.prompt import llm_querying
+from varparser.utils import correct_message
+from varparser.eval import evaluator
 
 from tqdm import tqdm
 import pandas as pd
+import argparse
 import logging
 import time
-import nltk
-import csv
+import yaml
 import os
 
 # nltk.download('words')
@@ -16,23 +16,6 @@ import os
 
 # logging.basicConfig(filename='main.log', level=logging.INFO,
 #                     format='%(message)s')
-
-datasets = [
-    "Apache",
-    "BGL",
-    "Hadoop",
-    "HDFS",
-    "HealthApp",
-    "HPC",
-    "Linux",
-    "Mac",
-    "OpenSSH",
-    "OpenStack",
-    "Proxifier",
-    "Spark",
-    "Thunderbird",
-    "Zookeeper"
-]
 
 
 class VarParser:
@@ -89,7 +72,7 @@ class VarParser:
         parsed_csv.to_csv(
             f"parsed/{self.dataset}_{self.shot}_parsed.csv", index=False)
 
-        avg_token = token_consumed/invoc_num if invoc_num != 0 else 0
+        avg_token = token_consumed / invoc_num if invoc_num != 0 else 0
         evaluator(self.dataset, self.model, self.shot, parse_time,
                   invoc_num, avg_token, invoc_time)
         return
@@ -111,8 +94,39 @@ class VarParser:
 
 
 if __name__ == "__main__":
-    args = parse_args()
+    with open('config.yaml', 'r') as f:
+        config = yaml.safe_load(f)
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset", type=str, default="all")
+    parser.add_argument("--data_type", type=str, default="full")
+    parser.add_argument("--shot", type=int, default=3)
+    args = parser.parse_args()
+
+    if args.dataset != "all":
+        datasets = [args.dataset]
+    else:
+        datasets = [
+            "Apache",
+            "BGL",
+            "Hadoop",
+            "HDFS",
+            "HealthApp",
+            "HPC",
+            "Linux",
+            "Mac",
+            "OpenSSH",
+            "OpenStack",
+            "Proxifier",
+            "Spark",
+            "Thunderbird",
+            "Zookeeper"
+        ]
+
     for dataset in datasets:
         logparser = VarParser(
-            dataset=dataset, data_type=args.data_type, model=args.model, shot=args.shot)
+            dataset=dataset,
+            data_type=args.data_type,
+            model=config["model"],
+            shot=args.shot)
         logparser.parse()

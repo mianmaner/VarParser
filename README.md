@@ -1,45 +1,110 @@
 # VarParser: Unleashing the Neglected Power of Variables for LLM-based Log Parsing
 
+This repository contains the official implementation of our WWW 2026 paper:
 
-### Datasets
+**"VarParser: Unleashing the Neglected Power of Variables for LLM-based Log Parsing".** 
 
-Please download the large-scale datasets of Loghub-2.0 via [Zenodo](https://zenodo.org/record/8275861) and unzip these datasets into the directory of `dataset/full_dataset`.
+*Proceedings of the ACM Web Conference (WWW), 2026*
 
-### Environment
+## Clone the Repository
+
+```bash
+git clone https://github.com/mianmaner/VarParser.git
+cd VarParser
+```
+
+## Repository Structure
+
+```txt
+📦 VarParser
+├─ dataset/
+│  └─ full_dataset/          # LogHub-2.0 datasets
+├─ sample/                   # Sampled candidate logs
+├─ parsed/                   # Parsed log results
+├─ result/                   # Evaluation outputs
+├─ varparser/                # Core implementation
+│  ├─ cache.py               # Variable-aware template cache
+│  ├─ prompt.py              # LLM prompt construction & querying
+│  ├─ utils.py               # Log preprocessing utilities
+│  └─ eval.py                # Parsing evaluation
+├─ running.py                # Main entry for online log parsing
+├─ sample.py                 # Candidate sampling script
+├─ config.yaml               # LLM configuration
+├─ requirements.txt
+└─ README.md
+```
+
+## Dataset
+
+We conduct experiments on LogHub-2.0, a large-scale and widely used log parsing benchmark.
+
+Please download the datasets from Zenodo:
+🔗 https://zenodo.org/record/8275861
+
+Unzip the files into the following directory:
+```txt
+dataset/full_dataset/
+```
+
+Example structure:
+
+```txt
+📦 VarParser
+├─ dataset
+|  └─ full_dataset
+│     ├─ Apache
+│     │  ├─ Apache_full.log
+│     │  ├─ Apache_full.log_structured.csv
+│     │  ├─ Apache_full.log_structured_corrected.csv
+│     │  ├─ Apache_full.log_templates.csv
+│     │  └─ Apache_full.log_templates_corrected.csv
+│     ├─ ...
+```
+
+## Environment Setup
 
 ```txt
 python >= 3.11,
 pip install -r requirements.txt
 ```
 
-### Reproducible workflow
+## Reducible Worflow
 
-Please first set your OpenAI API in `config.json`.
+Please first set your OpenAI API in `config.yaml`.
 
 ```txt
-"api_key": "<OpenAI_API_KEY>",
+"model": "<MODEL_NAME>"
+"api_key": "<OpenAI_API_KEY>"
 "base_url": "<OpenAI_BASE_URL>"
 ```
 
 Then you can excute the following command to start online parsing.
 
+To start online log parsing with VarParser, simply run:
+
 ```bash
-python main.py --model='MODEL_NAME'
+bash run_parser.sh
 ```
 
-The parsed results will be saved in the `parsed/` directory and evaluation results will be saved in the `result/` directory.
+By default, the script will parse all datasets in LogHub-2.0 using the specified LLM configuration.
 
-> Candidate Sampling (optional): We have provided the saved sampled candidate logs for reproducing. You can also delete the file in `sample/` directory and excute `python sample.py`
+Parsed log results will be saved to:
+```txt
+parsed/
+```
 
-### Baselines
+Evaluation results (e.g., parsing accuracy, runtime, token usage) will be saved to:
+```txt
+result/
+```
 
-Here are the links to the implementation code of all baselines:
-- [Drain](https://github.com/logpai/loghub-2.0/blob/main/benchmark/old_benchmark/Drain_benchmark.py), 
-- [AEL](https://github.com/logpai/loghub-2.0/blob/main/benchmark/old_benchmark/AEL_benchmark.py), 
-- [LogPPT](https://github.com/logpai/loghub-2.0/tree/main/benchmark/LogPPT), 
-- [UniParser](https://github.com/logpai/loghub-2.0/tree/main/benchmark/UniParser), 
-- [LibreLog](https://github.com/zeyang919/LibreLog), 
-- [LILAC](https://github.com/logpai/LILAC), 
-- [LogBatcher](https://github.com/LogIntelligence/LogBatcher), 
-- [LUNAR](https://github.com/logpai/LUNAR)
 
+### Candidate Sampling (Optional)
+
+We have provided the saved sampled candidate logs for reproducing. You can also delete the file in `sample/` directory and excute `python sample.py`
+
+```bash
+python sample.py
+```
+
+This step is optional but recommended when adapting VarParser to new datasets.

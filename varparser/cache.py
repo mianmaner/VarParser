@@ -1,4 +1,4 @@
-from utils import correct_template, create_fuzzy_key, process_template, _tokenize, jaccard_similarity, levenshtein_similarity, remove_punctuation
+from repo.VarParser.varparser.utils import correct_template, create_fuzzy_key, process_template, _tokenize, jaccard_similarity, levenshtein_similarity, remove_punctuation
 
 from collections import defaultdict
 from nltk.corpus import words
@@ -210,7 +210,7 @@ class VarCache:
             self.template_examples.append([log_message, response])
             self.template_tokens_list.append(template_tokens)
             self.template_to_var.append(label_positions)
-            result_index = len(self.templates)-1
+            result_index = len(self.templates) - 1
         else:
             for label, pos_list in label_positions.items():
                 if label in self.var_units:
@@ -400,7 +400,7 @@ class VarCache:
             for token in tokens:
                 token_start_positions.append(current_position)
                 current_position += len(token) + 1
-                token_end_positions.append(current_position-1)
+                token_end_positions.append(current_position - 1)
 
             for label, value in zip(labels, matched_vars):
                 start_poses = var_start_positions[value]

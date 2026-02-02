@@ -5,7 +5,9 @@ import os
 import re
 
 # Setting with your OpenAI API
+
 config = json.load(open("config.json"))
+model = config['model']
 client = OpenAI(api_key=config['api_key'], base_url=config['base_url'])
 # client = Groq(api_key=config['api_key'])
 

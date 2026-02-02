@@ -1,4 +1,4 @@
-from utils import tokenize, jaccard_similarity, mask_message, correct_message
+from varparser.utils import tokenize, jaccard_similarity, mask_message, correct_message
 
 from collections import defaultdict
 from nltk.corpus import words

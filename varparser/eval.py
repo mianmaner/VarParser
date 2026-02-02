@@ -1,7 +1,7 @@
 from evaluation.evaluator import evaluate
 from evaluation.template_level_analysis import evaluate_template_level, evaluate_template_level_lstm
 from evaluation.PA_calculator import calculate_parsing_accuracy, calculate_parsing_accuracy_lstm
-from utils import process_template
+from repo.VarParser.varparser.utils import process_template
 import pandas as pd
 import time
 import csv
