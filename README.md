@@ -73,9 +73,9 @@ pip install -r requirements.txt
 Please first set your OpenAI API in `config.yaml`.
 
 ```txt
-"model": "<MODEL_NAME>"
-"api_key": "<OpenAI_API_KEY>"
-"base_url": "<OpenAI_BASE_URL>"
+model: "<MODEL_NAME>"
+api_key: "<OpenAI_API_KEY>"
+base_url: "<OpenAI_BASE_URL>"
 ```
 
 Then you can excute the following command to start online parsing.
