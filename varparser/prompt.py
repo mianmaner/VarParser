@@ -1,18 +1,19 @@
 from openai import OpenAI
 from groq import Groq
 import json
+import yaml
 import os
 import re
 
 # Setting with your OpenAI API
-
-config = json.load(open("config.json"))
+with open('config.yaml', 'r') as f:
+    config = yaml.safe_load(f)
 model = config['model']
 client = OpenAI(api_key=config['api_key'], base_url=config['base_url'])
 # client = Groq(api_key=config['api_key'])
 
 
-def llm_querying(query_log, var_prompt, model, reference, temperature=0.0):
+def llm_querying(query_log, var_prompt, reference, temperature=0.0):
     instruction = "As a log parsing expert, refer to variable examples, replace variables with the corresponding label (no spaces in curly brackets) in the log if present. Just return only the parsed log in backtick and ensure it matches exactly"
 
     prompt_message = ""

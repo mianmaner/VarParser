@@ -19,10 +19,9 @@ import os
 
 
 class VarParser:
-    def __init__(self, dataset, data_type, model, shot):
+    def __init__(self, dataset, data_type, shot):
         self.dataset = dataset
         self.data_type = data_type
-        self.model = model
         self.shot = shot
 
     def parse(self):
@@ -50,7 +49,7 @@ class VarParser:
                 print(f"query: {log_message}")
                 t0 = time.time()
                 response, tokens = llm_querying(
-                    query_log=log_message, var_prompt=var_prompt, reference=reference, model=self.model)
+                    query_log=log_message, var_prompt=var_prompt, reference=reference)
                 invoc_time += time.time() - t0
                 invoc_num += 1
                 token_consumed += tokens
@@ -127,6 +126,5 @@ if __name__ == "__main__":
         logparser = VarParser(
             dataset=dataset,
             data_type=args.data_type,
-            model=config["model"],
             shot=args.shot)
         logparser.parse()
