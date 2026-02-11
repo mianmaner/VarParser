@@ -1,0 +1,33 @@
+Content,EventTemplate
+Linux version 2.6.5-1.358 (bhcompile@bugs.build.redhat.com) (gcc version 3.3.3 20040412 (Red Hat Linux 3.3.3-7)) #1 Sat May 8 09:04:50 EDT 2004,Linux version {version} ({website_url}) (gcc version {version} (Red Hat Linux {version})) {date_time}
+"Memory: 125312k/129720k available (1540k kernel code, 3860k reserved, 599k data, 144k init, 0k highmem)","Memory: {memory} available ({memory} kernel code, {memory} reserved, {memory} data, {memory} init, {memory} highmem)"
+ACPI: ACPI tables contain no PCI IRQ routing entries,ACPI: ACPI tables contain no PCI IRQ routing entries
+"CPU: L1 I cache: 16K, L1 D cache: 16K","CPU: L1 I cache: {memory}, L1 D cache: {memory}"
+"ide0: BM-DMA at 0xffa0-0xffa7, BIOS settings: hda:DMA, hdb:pio","ide0: BM-DMA at {hex_code}, BIOS settings: hda:{hda_info}, hdb:{hdb_info}"
+xinetd Version 2.3.13 started with libwrap loadavg options compiled in,xinetd Version {version} started with {option_info} options compiled in
+Linux Plug and Play Support v0.97 (c) Adam Belay,Linux Plug and Play Support {version} (c) Adam Belay
+"serio: i8042 AUX port at 0x60,0x64 irq 12","serio: i8042 AUX port at {hex_code},{hex_code} irq {number}"
+authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=unknown.sagonet.net user=root,authentication failure; logname={log_name} uid={number} euid={number} tty={tty_name} ruser={ruser} rhost={host_info} user={user_name}
+Authentication failed from 163.27.187.39 (163.27.187.39): Software caused connection abort,Authentication failed from {ip} ({ip}): Software caused connection abort
+uhci_hcd 0000:00:1f.2: UHCI Host Controller,uhci_hcd {mac_address}: UHCI Host Controller
+agpgart: Detected an Intel i810 E Chipset,agpgart: Detected an {chipset_info} Chipset
+"Serial: 8250/16550 driver Revision:1.90 8 ports, IRQ sharing enabled","Serial: {number} driver Revision:number {number} ports, IRQ sharing enabled"
+RAMDISK driver initialized: 16 RAM disks of 16384K size 1024 blocksize,RAMDISK driver initialized: {number} RAM disks of {memory} size {number} blocksize
+"hda: 29336832 sectors (15020 MB) w/1916KiB Cache, CHS=29104/16/63, UDMA(66)","hda: {number} sectors ({number} MB) w/{memory} Cache, CHS={chs_info}, UDMA({number})"
+checking if image is initramfs it isn't (no cpio magic); looks like an initrd,checking if image is initramfs it isn't (no cpio magic); looks like an initrd
+TCP: Hash tables configured (established 8192 bind 16384),TCP: Hash tables configured (established {number} bind {number})
+warning: can't get client address: Connection reset by peer,warning: can't get client address: Connection reset by peer
+"FAILED LOGIN 1 FROM (null) FOR , Authentication failure","FAILED LOGIN {number} FROM ({host_info}) FOR , Authentication failure"
+PID hash table entries: 512 (order 9: 4096 bytes),PID hash table entries: {number} (order {number}: {number} bytes)
+apm: BIOS version 1.2 Flags 0x03 (Driver version 1.16ac),apm: BIOS version {number} Flags {hex_code} (Driver version {version})
+ide: Assuming 33MHz system bus speed for PIO modes; override with idebus=xx,ide: Assuming {number}MHz system bus speed for PIO modes; override with idebus={idebus_info}
+"Device: /dev/hda, is SMART capable. Adding to ""monitor"" list","Device: {file_path}, is SMART capable. Adding to ""monitor"" list"
+Monitoring 1 ATA and 0 SCSI devices,Monitoring {number} ATA and {number} SCSI devices
+kjournald starting. Commit interval 5 seconds,kjournald starting. Commit interval {number} seconds
+"parport0: PC-style at 0x378 (0x778) [PCSPP,TRISTATE,EPP]",parport0: PC-style at {hex_code} ({hex_code}) [{mode_info}]
+Floppy drive(s): fd0 is 1.44M,Floppy drive(s): {drive_info} is {memory}
+getpeername (ftpd): Transport endpoint is not connected,getpeername (ftpd): Transport endpoint is not connected
+BIOS-e820: 0000000000000000 - 00000000000a0000 (usable),BIOS-e820: {number} - {number} (usable)
+"DMA zone: 4096 pages, LIFO batch:1","DMA zone: {number} pages, LIFO batch:{number}"
+Using tsc for high-res timesource,Using tsc for high-res timesource
+Uniform Multi-Platform E-IDE driver Revision: 7.00alpha2,Uniform Multi-Platform E-IDE driver Revision: {version}

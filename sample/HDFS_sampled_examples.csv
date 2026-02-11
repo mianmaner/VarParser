@@ -1,0 +1,33 @@
+Content,EventTemplate
+PacketResponder blk_4241467193520768333 2 Exception java.net.SocketTimeoutException: 120000 millis timeout while waiting for channel to be ready for read. ch : java.nio.channels.SocketChannel[connected local=/10.251.107.242:58971 remote=/10.251.123.33:50010],PacketResponder {block_id} {number} Exception java.net.SocketTimeoutException: {number} millis timeout while waiting for channel to be ready for read. ch : java.nio.channels.SocketChannel[connected local={ip} remote={ip}]
+BLOCK* ask 10.250.14.224:50010 to replicate blk_-1608999687919862906 to datanode(s) 10.251.215.16:50010 10.251.71.193:50010,BLOCK* ask {ip} to replicate {block_id} to datanode(s) {ip} {ip}
+Exception in receiveBlock for block blk_3858821904894294369 java.io.InterruptedIOException: Interruped while waiting for IO on channel java.nio.channels.SocketChannel[connected local=/10.250.13.188:58401 remote=/10.251.39.160:50010]. 489996 millis timeout left,Exception in receiveBlock for block {block_id} java.io.InterruptedIOException: Interruped while waiting for IO on channel java.nio.channels.SocketChannel[connected local={ip} remote={ip}]. {number} millis timeout left
+10.251.194.147:50010:Failed to transfer blk_992101295951175683 to 10.251.214.112:50010 got java.io.IOException: Connection reset by peer,{ip}:Failed to transfer {block_id} to {ip} got java.io.IOException: Connection reset by peer
+Receiving block blk_-1608999687919862906 src: /10.250.19.102:54106 dest: /10.250.19.102:50010,Receiving block {block_id} src: {ip} dest: {ip}
+BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.250.10.6:50010 is added to blk_-1608999687919862906 size 91178,BLOCK* NameSystem.addStoredBlock: blockMap updated: {ip} is added to {block_id} size {number}
+Unexpected error trying to delete block blk_-1067131609371010449. BlockInfo not found in volumeMap,Unexpected error trying to delete block {block_id}. BlockInfo not found in volumeMap
+Reopen Block blk_7008279672769077211,Reopen Block {block_id}
+Verification succeeded for blk_-9073992586687739851,Verification succeeded for {block_id}
+BLOCK* NameSystem.addStoredBlock: addStoredBlock request received for blk_5398314277015661293 on 10.251.199.86:50010 size 67108864 But it does not belong to any file,BLOCK* NameSystem.addStoredBlock: addStoredBlock request received for {block_id} on {ip} size {number} But it does not belong to any file
+BLOCK* NameSystem.allocateBlock: /mnt/hadoop/mapred/system/job_200811092030_0001/job.jar. blk_-1608999687919862906,BLOCK* NameSystem.allocateBlock: {file_path} {block_id}
+PacketResponder 1 for block blk_-1608999687919862906 terminating,PacketResponder {number} for block {block_id} terminating
+Received block blk_-1608999687919862906 of size 91178 from /10.250.10.6,Received block {block_id} of size {number} from {ip}
+10.250.14.224:50010:Transmitted block blk_-1608999687919862906 to /10.251.215.16:50010,{ip}:Transmitted block {block_id} to {ip}
+"10.250.14.224:50010 Starting thread to transfer block blk_-1608999687919862906 to 10.251.215.16:50010, 10.251.71.193:50010","{ip} Starting thread to transfer block {block_id} to {ip}, {ip}"
+10.250.11.100:50010 Served block blk_-3544583377289625738 to /10.250.19.102,{ip} Served block {block_id} to {ip}
+writeBlock blk_7648436334209344608 received exception java.io.IOException: Could not read from stream,writeBlock {block_id} received exception java.io.IOException: Could not read from stream
+Deleting block blk_-8213344449220111733 file /mnt/hadoop/dfs/data/current/subdir39/blk_-8213344449220111733,Deleting block {block_id} file {file_path}
+Changing block file offset of block blk_4241467193520768333 from 0 to 30867456 meta file offset to 241159,Changing block file offset of block {block_id} from {number} to {number} meta file offset to {number}
+PacketResponder blk_3858821904894294369 0 Exception java.io.IOException: Broken pipe,PacketResponder {block_id} {number} Exception java.io.IOException: Broken pipe
+BLOCK* NameSystem.delete: blk_-1608999687919862906 is added to invalidSet of 10.250.10.6:50010,BLOCK* NameSystem.delete: {block_id} is added to invalidSet of {ip}
+10.251.71.68:50010:Got exception while serving blk_-8781759536960110370 to /10.250.17.225:,{ip}:Got exception while serving {block_id} to {ip}:
+Exception in receiveBlock for block blk_7008279672769077211 java.net.SocketTimeoutException: 490000 millis timeout while waiting for channel to be ready for write. ch : java.nio.channels.SocketChannel[connected local=/10.251.42.191:43873 remote=/10.251.123.33:50010],Exception in receiveBlock for block {block_id} java.net.SocketTimeoutException: {number} millis timeout while waiting for channel to be ready for write. ch : java.nio.channels.SocketChannel[connected local={ip} remote={ip}]
+PacketResponder blk_8085135783040518166 1 Exception java.nio.channels.ClosedByInterruptException,PacketResponder {block_id} {number} Exception java.nio.channels.ClosedByInterruptException
+Receiving block blk_7503483334202473044 src: /10.251.215.16:55695 dest: /10.251.215.16:50010,Receiving block {block_id} src: {ip} dest: {ip}
+BLOCK* NameSystem.allocateBlock: /mnt/hadoop/mapred/system/job_200811092030_0001/job.split. blk_7503483334202473044,BLOCK* NameSystem.allocateBlock: {file_path} {block_id}
+Received block blk_-1608999687919862906 src: /10.251.215.16:52002 dest: /10.251.215.16:50010 of size 91178,Received block {block_id} src: {ip} dest: {ip} of size {number}
+PacketResponder 1 for block blk_7503483334202473044 terminating,PacketResponder {number} for block {block_id} terminating
+Received block blk_7503483334202473044 of size 233217 from /10.251.215.16,Received block {block_id} of size {number} from {ip}
+BLOCK* NameSystem.addStoredBlock: blockMap updated: 10.251.106.10:50010 is added to blk_7503483334202473044 size 233217,BLOCK* NameSystem.addStoredBlock: blockMap updated: {ip} is added to {block_id} size {number}
+10.251.215.16:50010 Served block blk_7503483334202473044 to /10.250.19.102,{ip} Served block {block_id} to {ip}
+BLOCK* ask 10.251.31.5:50010 to replicate blk_-1608999687919862906 to datanode(s) 10.251.90.64:50010,BLOCK* ask {ip} to replicate {block_id} to datanode(s) {ip}

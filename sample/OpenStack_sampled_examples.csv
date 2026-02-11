@@ -1,0 +1,33 @@
+Content,EventTemplate
+"[instance: 3416d0fa-6f0f-41ce-9c0a-59ae9a735da8] Attempting claim: memory 2048 MB, disk 20 GB, vcpus 1 CPU","[instance: {instance_id}] Attempting claim: memory {number} MB, disk {number} GB, vcpus {number} CPU"
+"While synchronizing instance power states, found 1 instances in the database and 0 instances on the hypervisor","While synchronizing instance power states, found {number} instances in the database and {number} instances on the hypervisor"
+"10.11.11.225,10.11.10.1 ""GET /openstack/2012-08-10/meta_data.json HTTP/1.1"" status: 200 len: 264 time: 0.2246630","{ip} ""GET {file_path} {protocol}"" status: {number} len: {number} time: {number}"
+"couldn't obtain the vcpu count from domain id: b93203d4-c79b-41fe-8090-5f2b89b0d081, exception: Requested operation is not valid: cpu affinity is not supported",couldn't obtain the vcpu count from domain id: {domain_id} exception: Requested operation is not valid: cpu affinity is not supported
+Final resource view: name=cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us phys_ram=64172MB used_ram=2560MB phys_disk=15GB used_disk=20GB total_vcpus=16 used_vcpus=1 pci_stats=[],Final resource view: name={host_info} phys_ram={memory_size} used_ram={memory_size} phys_disk={memory_size} used_disk={memory_size} total_vcpus={number} used_vcpus={number} pci_stats={stats_list}
+Running instance usage audit for host cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us from 2017-05-15 01:00:00 to 2017-05-15 02:00:00. 88 instances,Running instance usage audit for host {host_info} from {date} {time} to {date} {time}. {number} instances
+"image 0673dd71-34c5-4fbb-86c4-40623fbe45b4 at (/var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742): in use: on this node 1 local, 0 on other nodes sharing this instance storage","image {image_id} at ({file_path}): in use: on this node {number} local, {number} on other nodes sharing this instance storage"
+[instance: 2b590f10-49fd-4ec9-ae41-19596c2f4b25] VM Stopped (Lifecycle Event),[instance: {instance_id}] VM Stopped (Lifecycle Event)
+[instance: 3edec1e4-9678-4a3a-a21b-a145a4ee5e61] During sync_power_state the instance has a pending task (spawning). Skip,[instance: {instance_id}] During sync_power_state the instance has a pending task (spawning). Skip
+"[instance: 3416d0fa-6f0f-41ce-9c0a-59ae9a735da8] Total memory: 64172 MB, used: 512.00 MB","[instance: {instance_id}] Total memory: {number} MB, used: {number} MB"
+Active base files: /var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742,Active base files: {file_path}
+Creating event network-vif-plugged:95fcdc5e-3159-4e86-968a-13a2a06e9e89 for instance 3edec1e4-9678-4a3a-a21b-a145a4ee5e61,Creating event {event} for instance {instance_id}
+[instance: 3edec1e4-9678-4a3a-a21b-a145a4ee5e61] Took 0.47 seconds to deallocate network for instance,[instance: {instance_id}] Took {number} seconds to deallocate network for instance
+HTTP exception thrown: No instances found for any event,HTTP exception thrown: No instances found for any event
+"[instance: 3416d0fa-6f0f-41ce-9c0a-59ae9a735da8] memory limit: 96258.00 MB, free: 95746.00 MB","[instance: {instance_id}] memory limit: {number} MB, free: {number} MB"
+"[instance: 3416d0fa-6f0f-41ce-9c0a-59ae9a735da8] disk limit not specified, defaulting to unlimited","[instance: {instance_id}] disk limit not specified, defaulting to unlimited"
+Auditing locally available compute resources for node cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us,Auditing locally available compute resources for node {host_info}
+Compute_service record updated for cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us:cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us,Compute_service record updated for {host_info}
+The instance sync for host 'cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us' did not match. Re-created its InstanceList,The instance sync for host {host_info} did not match. Re-created its InstanceList
+image 0673dd71-34c5-4fbb-86c4-40623fbe45b4 at (/var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742): checking,image {image_id} at ({file_path}): checking
+"10.11.10.1 ""POST /v2/e9746973ac574c6b8a9e8857f56a7608/os-server-external-events HTTP/1.1"" status: 200 len: 380 time: 0.0929029","{ip} ""POST {file_path} {protocol}"" status: {number} len: {number} time: {number}"
+[instance: 3edec1e4-9678-4a3a-a21b-a145a4ee5e61] Instance spawned successfully,[instance: {instance_id}] Instance spawned successfully
+[instance: 3edec1e4-9678-4a3a-a21b-a145a4ee5e61] Deleting instance files /var/lib/nova/instances/3edec1e4-9678-4a3a-a21b-a145a4ee5e61_del,[instance: {instance_id}] Deleting instance files {file_path}
+Removing base or swap file: /var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742,Removing base or swap file: {file_path}
+Successfully synced instances from host 'cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us',Successfully synced instances from host {host_info}
+Base or swap file too young to remove: /var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742,Base or swap file too young to remove: {file_path}
+"10.11.10.1 ""GET /v2/54fadb412c4e40cdbaed9335e4c35a9e/servers/detail HTTP/1.1"" status: 200 len: 1583 time: 0.1919448","{ip} ""GET {file_path} {protocol}"" status: {number} len: {number} time: {number}"
+[instance: 3edec1e4-9678-4a3a-a21b-a145a4ee5e61] Creating image,[instance: {instance_id}] Creating image
+[instance: 3edec1e4-9678-4a3a-a21b-a145a4ee5e61] Took 20.58 seconds to spawn the instance on the hypervisor,[instance: {instance_id}] Took {number} seconds to spawn the instance on the hypervisor
+[instance: 3edec1e4-9678-4a3a-a21b-a145a4ee5e61] Took 21.38 seconds to build instance,[instance: {instance_id}] Took {number} seconds to build instance
+[instance: 3edec1e4-9678-4a3a-a21b-a145a4ee5e61] Deletion of /var/lib/nova/instances/3edec1e4-9678-4a3a-a21b-a145a4ee5e61_del complete,[instance: {instance_id}] Deletion of {file_path} complete
+"Total usable vcpus: 16, total allocated vcpus: 1","Total usable vcpus: {number}, total allocated vcpus: {number}"
